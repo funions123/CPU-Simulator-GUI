@@ -60,7 +60,7 @@
             // 
             this.fcfs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.fcfs.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.fcfs.Location = new System.Drawing.Point(12, 138);
+            this.fcfs.Location = new System.Drawing.Point(12, 89);
             this.fcfs.Name = "fcfs";
             this.fcfs.Size = new System.Drawing.Size(129, 55);
             this.fcfs.TabIndex = 2;
@@ -72,7 +72,7 @@
             // 
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(159, 138);
+            this.button2.Location = new System.Drawing.Point(12, 150);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(134, 55);
             this.button2.TabIndex = 3;
@@ -84,7 +84,7 @@
             // 
             this.btnPriority.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPriority.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPriority.Location = new System.Drawing.Point(310, 138);
+            this.btnPriority.Location = new System.Drawing.Point(161, 117);
             this.btnPriority.Name = "btnPriority";
             this.btnPriority.Size = new System.Drawing.Size(137, 55);
             this.btnPriority.TabIndex = 4;
@@ -97,7 +97,7 @@
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(353, 206);
+            this.label1.Location = new System.Drawing.Point(351, 206);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 13);
             this.label1.TabIndex = 5;

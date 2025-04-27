@@ -54,6 +54,8 @@
             this.btnPriority = new System.Windows.Forms.Button();
             this.btnSJF = new System.Windows.Forms.Button();
             this.btnFCFS = new System.Windows.Forms.Button();
+            this.btnSTRF = new System.Windows.Forms.Button();
+            this.btnHRRN = new System.Windows.Forms.Button();
             this.txtProcess = new System.Windows.Forms.TextBox();
             this.labelProcess = new System.Windows.Forms.Label();
             this.productTab = new System.Windows.Forms.TabPage();
@@ -318,6 +320,8 @@
             this.cpuSchedulerTab.Controls.Add(this.btnPriority);
             this.cpuSchedulerTab.Controls.Add(this.btnSJF);
             this.cpuSchedulerTab.Controls.Add(this.btnFCFS);
+            this.cpuSchedulerTab.Controls.Add(this.btnSTRF);
+            this.cpuSchedulerTab.Controls.Add(this.btnHRRN);
             this.cpuSchedulerTab.Controls.Add(this.txtProcess);
             this.cpuSchedulerTab.Controls.Add(this.labelProcess);
             this.cpuSchedulerTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -337,7 +341,7 @@
             this.btnRoundRobin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoundRobin.Image = ((System.Drawing.Image)(resources.GetObject("btnRoundRobin.Image")));
             this.btnRoundRobin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRoundRobin.Location = new System.Drawing.Point(247, 278);
+            this.btnRoundRobin.Location = new System.Drawing.Point(114, 278);
             this.btnRoundRobin.Name = "btnRoundRobin";
             this.btnRoundRobin.Size = new System.Drawing.Size(85, 45);
             this.btnRoundRobin.TabIndex = 12;
@@ -388,7 +392,7 @@
             this.btnSJF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSJF.Image = ((System.Drawing.Image)(resources.GetObject("btnSJF.Image")));
             this.btnSJF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSJF.Location = new System.Drawing.Point(115, 278);
+            this.btnSJF.Location = new System.Drawing.Point(214, 278);
             this.btnSJF.Name = "btnSJF";
             this.btnSJF.Size = new System.Drawing.Size(117, 45);
             this.btnSJF.TabIndex = 9;
@@ -407,7 +411,7 @@
             this.btnFCFS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFCFS.Image = ((System.Drawing.Image)(resources.GetObject("btnFCFS.Image")));
             this.btnFCFS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFCFS.Location = new System.Drawing.Point(16, 278);
+            this.btnFCFS.Location = new System.Drawing.Point(17, 278);
             this.btnFCFS.Name = "btnFCFS";
             this.btnFCFS.Size = new System.Drawing.Size(84, 45);
             this.btnFCFS.TabIndex = 8;
@@ -416,6 +420,42 @@
             this.btnFCFS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFCFS.UseVisualStyleBackColor = false;
             this.btnFCFS.Click += new System.EventHandler(this.btnFCFS_Click);
+            // 
+            // btnSTRF
+            // 
+            this.btnSTRF.BackColor = System.Drawing.Color.Beige;
+            this.btnSTRF.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSTRF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
+            this.btnSTRF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSTRF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSTRF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSTRF.Location = new System.Drawing.Point(347, 227);
+            this.btnSTRF.Name = "btnSTRF";
+            this.btnSTRF.Size = new System.Drawing.Size(84, 45);
+            this.btnSTRF.TabIndex = 8;
+            this.btnSTRF.Text = "STRF";
+            this.btnSTRF.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSTRF.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSTRF.UseVisualStyleBackColor = false;
+            this.btnSTRF.Click += new System.EventHandler(this.btnSTRF_Click);
+            // 
+            // btnHRRN
+            // 
+            this.btnHRRN.BackColor = System.Drawing.Color.Beige;
+            this.btnHRRN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHRRN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
+            this.btnHRRN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHRRN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHRRN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHRRN.Location = new System.Drawing.Point(61, 227);
+            this.btnHRRN.Name = "btnHRRN";
+            this.btnHRRN.Size = new System.Drawing.Size(84, 45);
+            this.btnHRRN.TabIndex = 8;
+            this.btnHRRN.Text = "HRRN";
+            this.btnHRRN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHRRN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHRRN.UseVisualStyleBackColor = false;
+            this.btnHRRN.Click += new System.EventHandler(this.btnHRRN_Click);
             // 
             // txtProcess
             // 
@@ -569,6 +609,8 @@
         private System.Windows.Forms.Button btnPriority;
         private System.Windows.Forms.Button btnSJF;
         private System.Windows.Forms.Button btnFCFS;
+        private System.Windows.Forms.Button btnSTRF;
+        private System.Windows.Forms.Button btnHRRN;
         public System.Windows.Forms.TextBox txtProcess;
         private System.Windows.Forms.Label labelProcess;
         private System.Windows.Forms.Button btnQrcode;

@@ -181,6 +181,94 @@ namespace CpuSchedulingWinForms
             }
         }
 
+        private void btnSTRF_Click(object sender, EventArgs e)
+        {
+            if (txtProcess.Text != "")
+            {
+                Algorithms.strfAlgorithm(txtProcess.Text);
+                int numberOfProcess = Int16.Parse(txtProcess.Text);
+                if (numberOfProcess <= 10)
+                {
+                    this.progressBar1.Increment(4); //cpu progress bar
+                    this.progressBar1.SetState(1);  //cpu color progress bar
+                    this.progressBar2.Increment(13);
+                    this.progressBar2.SetState(1);
+                }
+                else if (numberOfProcess > 10)
+                {
+                    this.progressBar1.Increment(15);
+                    this.progressBar1.SetState(1);
+                    this.progressBar2.Increment(38); //memory progress bar
+                    this.progressBar2.SetState(3);   //memory color progress bar
+                }
+                listView1.Clear();
+                listView1.View = View.Details;
+
+                listView1.Columns.Add("Process ID", 150, HorizontalAlignment.Center);
+                listView1.Columns.Add("Quantum Time", 100, HorizontalAlignment.Center);
+
+                for (int i = 0; i < numberOfProcess; i++)
+                {
+                    var item = new ListViewItem();
+                    item.Text = "Process " + (i + 1);
+                    item.SubItems.Add("-");
+                    listView1.Items.Add(item);
+                }
+
+                listView1.Items.Add("\n");
+                listView1.Items.Add("CPU handles : " + numberOfProcess);
+            }
+            else
+            {
+                MessageBox.Show("Enter number of processes", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtProcess.Focus();
+            }
+        }
+
+        private void btnHRRN_Click(object sender, EventArgs e)
+        {
+            if (txtProcess.Text != "")
+            {
+                Algorithms.hrrnAlgorithm(txtProcess.Text);
+                int numberOfProcess = Int16.Parse(txtProcess.Text);
+                if (numberOfProcess <= 10)
+                {
+                    this.progressBar1.Increment(4); //cpu progress bar
+                    this.progressBar1.SetState(1);  //cpu color progress bar
+                    this.progressBar2.Increment(13);
+                    this.progressBar2.SetState(1);
+                }
+                else if (numberOfProcess > 10)
+                {
+                    this.progressBar1.Increment(15);
+                    this.progressBar1.SetState(1);
+                    this.progressBar2.Increment(38); //memory progress bar
+                    this.progressBar2.SetState(3);   //memory color progress bar
+                }
+                listView1.Clear();
+                listView1.View = View.Details;
+
+                listView1.Columns.Add("Process ID", 150, HorizontalAlignment.Center);
+                listView1.Columns.Add("Quantum Time", 100, HorizontalAlignment.Center);
+
+                for (int i = 0; i < numberOfProcess; i++)
+                {
+                    var item = new ListViewItem();
+                    item.Text = "Process " + (i + 1);
+                    item.SubItems.Add("-");
+                    listView1.Items.Add(item);
+                }
+
+                listView1.Items.Add("\n");
+                listView1.Items.Add("CPU handles : " + numberOfProcess);
+            }
+            else
+            {
+                MessageBox.Show("Enter number of processes", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtProcess.Focus();
+            }
+        }
+
         private void txtProcess_TextChanged(object sender, EventArgs e)
         {
 
